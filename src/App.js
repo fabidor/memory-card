@@ -1,6 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState, useEffect} from 'react';
+import GameDisplay from "./components/GameDisplay.js"
 
+
+const App = () => {
+  const [cardList, setCards] = useState([
+    {name: "A"},
+    {name: "B"},
+    {name: "C"},
+    {name: "D"},
+    {name: "E"},
+    {name: "F"},
+    {name: "G"}
+  ]);
+  
+  
+  const [usedCards, updateUsed] = useState([]);
+  return (
+    <div className="App">
+      <GameDisplay cardList = {cardList} />
+    </div> 
+    )
+
+}
+/*
 function App() {
   return (
     <div className="App">
@@ -20,6 +44,6 @@ function App() {
       </header>
     </div>
   );
-}
+} */
 
 export default App;
