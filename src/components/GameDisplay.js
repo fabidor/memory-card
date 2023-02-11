@@ -20,10 +20,9 @@ const GameDisplay = (props) =>{
       
         return array;
       }
-    const memoryFix = () =>{
+    const memoryFix = (e) =>{
         setShuffleTime(shuffleTime => true);
-    
-        console.log(cards);
+        props.checkPick(e.target.id);
         
     }
     useEffect(() => {
@@ -37,7 +36,7 @@ const GameDisplay = (props) =>{
         <div>
         {cards.map(card => {
             return(
-            <div onClick={memoryFix}>{card.name}</div>)
+            <div key={card.id} id={card.id} onClick={memoryFix}>{card.name}</div>)
             
         })
     } 
