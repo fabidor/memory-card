@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,17 +9,29 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+.title{
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.scoreBox{
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 10px;
+}
+
+.currentScore,
+.hiScore{
+  text-align: right;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +44,24 @@
     transform: rotate(360deg);
   }
 }
+
+.cardBoard{
+  display: grid;
+  background-color: beige;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+
+
+}
+
+.card{
+  border-radius: 5px;
+  background-color: white;
+
+}
+
+.digimonPic{
+  width: 180px;
+}
+
+

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import CardDisplay from "./CardDisplay.js"
 
 const GameDisplay = (props) =>{
     const [cards, scrambleCards] = useState(props.cardList);
@@ -21,8 +22,11 @@ const GameDisplay = (props) =>{
         return array;
       }
     const memoryFix = (e) =>{
-        setShuffleTime(shuffleTime => true);
         props.checkPick(e.target.id);
+        setShuffleTime(shuffleTime => true);
+        console.log(e.target.id);
+        
+        
         
     }
     useEffect(() => {
@@ -33,10 +37,13 @@ const GameDisplay = (props) =>{
     })
     
     return(
-        <div>
+        <div className="cardBoard">
         {cards.map(card => {
             return(
-            <div key={card.id} id={card.id} onClick={memoryFix}>{card.name}</div>)
+            <div key={card.id} onClick={memoryFix} id={card.id}>
+                 <CardDisplay card={card}/>
+                </div>
+            )
             
         })
     } 
