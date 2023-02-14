@@ -1,5 +1,13 @@
+html{
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  background-color: black;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 15fr;
 }
 
 
@@ -13,6 +21,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: purple;
+  color: white;
 }
 
 .title{
@@ -47,9 +57,12 @@
 
 .cardBoard{
   display: grid;
-  background-color: beige;
+  background-color: black;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 190px 190px;
   gap: 5px;
+  padding: 10px;
+  align-items: center;
 
 
 }
@@ -61,7 +74,7 @@
 }
 
 .digimonPic{
-  width: 180px;
+  width: 160px;
 }
 
 

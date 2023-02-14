@@ -9,6 +9,9 @@ import ebiburgamonpic from "./pictures/640px-Ebiburgamon.jpeg"
 import batterymonpic from "./pictures/Batterymon.jpeg"
 import bottamonpic from "./pictures/Botamon.jpeg"
 import chibikiwipic from "./pictures/ChibiKiwimon.jpeg"
+import agumonpic from "./pictures/240px-Agumon_hakase.jpeg"
+import bearmonpic from "./pictures/240px-Bearmon2.jpeg"
+import frogmonpic from "./pictures/240px-Frogmon.jpeg"
 
 
 const App = () => {
@@ -19,7 +22,10 @@ const App = () => {
     {id: 4, name: "Ebiburgamon", src: ebiburgamonpic},
     {id: 5, name: "Batterymon", src:batterymonpic},
     {id: 6, name: "Bottamon", src:bottamonpic},
-    {id: 7, name: "Chibikiwimon", src:chibikiwipic}
+    {id: 7, name: "Chibikiwimon", src:chibikiwipic},
+    {id: 8, name: "Agumon Hakase", src: agumonpic},
+    {id: 9, name: "Bearmon", src: bearmonpic},
+    {id: 10, name: "Frogmon", src: frogmonpic}
   ]);
   
   
